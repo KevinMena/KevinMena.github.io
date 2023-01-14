@@ -1,5 +1,5 @@
 title: Kevin Mena
-remote_theme: pmarsceill/just-the-docs
+theme: jekyll-theme-cayman
 plugins:
   - jekyll-remote-theme
   - jekyll-relative-links
