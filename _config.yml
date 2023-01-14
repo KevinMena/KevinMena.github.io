@@ -1,4 +1,7 @@
+title: Kevin Mena
+remote_theme: pmarsceill/just-the-docs
 plugins:
+  - jekyll-remote-theme
   - jekyll-relative-links
 relative_links:
   enabled: true
