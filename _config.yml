@@ -1,10 +1,10 @@
 title: Kevin Mena
 tagline: Site Tagline
 author :
-	  name : Kevin Mena
-	  email : kevinm.developer@gmail.com
-	  github : KevinMena
-	  twitter : KevinAMena
+	name : Kevin Mena
+	email : kevinm.developer@gmail.com
+	github : KevinMena
+	twitter : KevinAMena
 markdown: kramdown
 theme: jekyll-theme-cayman
 plugins:
