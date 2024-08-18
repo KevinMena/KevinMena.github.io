@@ -1,5 +1,1 @@
-# Hi, my name is Kevin Mena
-
-## What do I do?
-
-Games
+# Hi, my name is Kevin Mena and this is my portfolio repository
