@@ -3,9 +3,13 @@ title: "Work Experience"
 description: "Work Experience"
 tags: ["work", "projects"]
 type: 'project'
+layout: "simple"
 ---
 
-# Learn Safari ![LS Logo](img/logo-LS-hor.png)
+<h1 style="text-align: center;">Learn Safari</h1>
+<p align="center">
+  <img src="ls/logo-LS-hor.png" alt="LS Logo"  width="650">
+</p>
 
 {{< keywordList >}}
 {{< keyword icon="dev" >}} Unity {{< /keyword >}}
@@ -42,7 +46,10 @@ for kids to learn Spanish, and _Safari Ingles_, for kids to learn English. Platf
 
 ---
 
-# Simon Bolivar University ![LS Logo](img/usb-logo-yellow.jpg) 
+<h1 style="text-align: center;">Simón Bolívar University</h1>
+<p align="center">
+  <img src="img/usb-logo-yellow.jpg" alt="USB Logo"  width="500">
+</p>
 
 {{< keywordList >}}
 {{< keyword icon="code" >}} Python {{< /keyword >}}

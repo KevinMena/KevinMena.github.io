@@ -3,6 +3,7 @@ title: "Personal Projects"
 description: "Projects that I have participated in"
 tags: ["projects", "personal", "jam"]
 type: 'project'
+layout: "simple"
 ---
 
 {{< lead >}}
@@ -11,7 +12,7 @@ type: 'project'
 
 ---
 
-## Project Avatar
+<h2 style="text-align: center;">Project Avatar</h2>
 
 {{< gallery >}}
   <img src="gifs/combo-combat.gif" class="grid-w45" />
@@ -30,7 +31,7 @@ Repository
 {{< /keywordList >}}
 
 This project started as a personal challenge to create deep systems and create a game with a bigger scope. 
-The game is a _3D Top Down RPG_ made in _Unity_.
+The game is a _3D Top Down RPG_ made in _Unity_.  
 **Still work in progress.**  
 
 **Systems**:
@@ -43,7 +44,7 @@ The game is a _3D Top Down RPG_ made in _Unity_.
 
 ---
 
-## Hades
+<h2 style="text-align: center;">Hades</h2>
 
 {{< keywordList >}}
 {{< keyword icon="dev" >}} Engines {{< /keyword >}}
@@ -70,7 +71,10 @@ _Dependencies_: Winit, Glow, ImGui, Vulkan/OpenGL.
 
 ---
 
-## Recontru-Bot ![LS Logo](img/recontrubot.jpg)
+<h2 style="text-align: center;">Recontru-Bot</h2>
+<p align="center">
+  <img src="img/recontrubot.jpg" alt="Recontru-Bot" width="350">
+</p>
 
 {{< keywordList >}}
 {{< keyword icon="dev" >}} Unity {{< /keyword >}}
@@ -88,7 +92,10 @@ Game made for the Caracas Game Jam 2020. An art deco adventure of a robot that w
 
 ---
 
-## Prince of Graecia ![LS Logo](img/prince.png)
+<h2 style="text-align: center;">Prince of Graecia</h2>
+<p align="center">
+  <img src="img/prince.png" alt="Prince of Graecia" width="350">
+</p>
 
 {{< keywordList >}}
 {{< keyword icon="dev" >}} Unity {{< /keyword >}}
