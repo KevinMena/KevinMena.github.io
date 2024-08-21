@@ -13,12 +13,12 @@ layout: "simple"
 
 {{< gallery >}}
   <figure>
-    <img src="img/unity-logo-white.png" alt="Unity" width="450">
-    <figcaption><b>Level: Expert</b></figcaption>
+    <img src="img/unity-logo-white.png" alt="Unity" width="400">
+    <figcaption><b>Level: High</b></figcaption>
   </figure>
   <figure>
-    <img src="img/unreal-logo-white.png" alt="Unreal Engine" width="350">
-    <figcaption><b>Level: Intermediate</b></figcaption>
+    <img src="img/unreal-logo-white.png" alt="Unreal Engine" width="300">
+    <figcaption><b>Level: Low/Intermediate</b></figcaption>
   </figure>
 {{< /gallery >}}
 
