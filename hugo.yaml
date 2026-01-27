@@ -1,0 +1,509 @@
+baseURL: https://kevinmena.github.io/
+languageCode: en-us
+title: "Kevin Mena Portfolio"
+theme: hugo-profile
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+enableRobotsTXT: true
+
+#services:
+  #googleAnalytics:
+    #id: G-MEASUREMENT_ID
+  #disqus:
+    #shortname: your-disqus-shortname
+
+pagination:
+  pagerSize: 3
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+# Menus:
+#   main:
+#     - identifier: blog
+#       name: Blog
+#       title: Blog posts
+#       url: /blogs
+#       weight: 1
+#     - identifier: gallery
+#       name: Gallery
+#       title: Blog posts
+#       url: /gallery
+#       weight: 2
+    #Dropdown menu
+    # - identifier: dropdown
+    #   title: Example dropdown menu
+    #   name: Dropdown
+    #   weight: 3
+    # - identifier: dropdown1
+    #   title: example dropdown 1
+    #   name: example 1
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 1
+    # - identifier: dropdown2
+    #   title: example dropdown 2
+    #   name: example 2
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 2
+
+params:
+  title: "Kevin Mena Portfolio"
+  # description: Text about my cool site
+  # staticPath: ""  # The path to serve the static files from
+  # favicon: "/fav.png"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  # If you want to load dynamically responsive images from Cloudinary
+  # This requires your images to be uploaded + hosted on Cloudinary
+  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
+  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
+
+  # Whether to add mathjax support on all pages. Alternatively, you can opt-in per page by adding `mathjax: true` in the frontmatter.
+  mathjax: false
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+    disableThemeToggle: true
+    defaultTheme: "dark" # dark
+
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
+
+  # color preference
+  # When using hex codes for colors, quotations must be used along with the # sign
+  # color:
+  #   textColor: "#343a40"
+  #   secondaryTextColor: "#6c757d"
+  #   textLinkColor: "#007bff"
+  #   backgroundColor: "#eaedf0"
+  #   secondaryBackgroundColor: "#64ffda1a"
+  #   primaryColor: "#007bff"
+  #   secondaryColor: "#f8f9fa"
+
+  #   darkmode:
+  #     textColor: "#e4e6eb"
+  #     secondaryTextColor: "#b0b3b8"
+  #     textLinkColor: "#ffffff"
+  #     backgroundColor: "#18191a"
+  #     secondaryBackgroundColor: "#212529"
+  #     primaryColor: "#ffffff"
+  #     secondaryColor: "#212529"
+
+  # If you want to customize the menu, you can change it here
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+    # showBrandLogo: false # Show brand logo in nav bar | default is true
+    # brandName: "Hugo Profile" # Brand name for the brand | default is the title variable
+    disableSearch: true
+    # searchPlaceholder: "Search"
+    stickyNavBar:
+      enable : true
+      showOnScrollUp : true
+    enableSeparator: false
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: true
+      disableContact: false
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hey! My name is"
+    title: "Kevin Mena."
+    subtitle: "Computer Engineer and Game Developer"
+    content: ""
+    image: /images/author/CVPhoto.jpg
+    bottomImage:
+      enable: true
+    roundImage: true # Make hero image circular | default false
+    button:
+      enable: false
+      name: "Resume"
+      url: "#"
+      download: true
+      newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/KevinMena
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/kevin-mena
+      # customIcons:
+      #   - icon: /fav.png
+      #     url: "https://example.com"
+
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    image: "/images/author/CVPhoto.jpg"
+    content: "I'm a Computer Engineer and Game Programmer from Venezuela. Graduated from **Simón Bolívar University** in Computer Engineering. Practical programmer with a great passion for games since young age. I enjoy writing effective and well-organized code. I'm not afraid to work on new things because I see this as an oppotunity to grow."
+    skills:
+      enable: true
+      title: "Here are some of the my skills"
+      sections:
+        - title: "Game Engines"
+          items:
+            - name: "Unity"
+              icon: images/logos/unity-logo.png
+            - name: "Unreal Engine"
+              icon: images/logos/unreal-logo.png
+        - title: "Programming Languages"
+          items:
+            - name: "C#"
+              icon: images/logos/csharp-logo.png
+            - name: "C++"
+              icon: images/logos/cpp-logo.png
+            - name: "Python"
+              icon: images/logos/python-logo.png
+            - name: "Java"
+              icon: images/logos/java-logo.png
+            - name: "Dart"
+              icon: images/logos/dart-logo.png
+        - title: "Extras"
+          items:
+            - name: "C"
+              icon: images/logos/c-logo.png
+            - name: "JavaScript"
+              icon: images/logos/js-logo.png
+            - name: "Rust"
+              icon: images/logos/rust-logo.png
+            - name: "Haskell"
+              icon: images/logos/haskell-logo.png
+            - name: "SQL"
+              icon: images/logos/sql-logo.png
+            - name: "PHP"
+              icon: images/logos/php-logo.png
+        - title: "Tools / Platforms"
+          items:
+            - name: "Flutter"
+              icon: images/logos/flutter-logo.png
+            - name: "Git"
+              icon: images/logos/git-logo.png
+            - name: "Docker"
+              icon: images/logos/docker-logo.png
+            - name: "CI/CD"
+              icon: images/logos/cicd-logo.png
+
+  # Experience
+  experience:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - company: "Let's Talk Media"
+        companyUrl: "https://letstalkmedia.co.uk"
+        jobs:
+          - name: "Software Developer"
+            date: "Oct 2025 - Current"
+            content: "I am currently working as a software developer for Let's Talk Media on an unannounced project developed with Flutter for mobile devices."
+            featuredItems:
+              fontAwesomeIcons:
+                - icon: fa-brands fa-android
+                  tooltip: Android
+                - icon: fa-brands fa-apple
+                  tooltip: iOS
+              customIcons:
+                - icon: /images/logos/flutter-logo.png
+                  tooltip: Flutter
+      
+      - company: "Nabos Studios"
+        companyUrl: "https://nabos.io"
+        frontImage: /images/work-experience/nabos/nabos_studios_logo.png
+        jobs:
+          - name: "Gameplay Programmer/Cinematic Animator"
+            date: "Sep 2024 - Jul 2025"
+            content: "[Jason Maxx.](https://store.steampowered.com/app/3745110/Jason_Maxx/) Narrative/Exploration game, set in a dark and absurd city. A man died under strange circumstances and detective Jason Maxx it's on the case. Developed with *Unity*."
+            featuredItems:
+              fontAwesomeIcons:
+                - icon: fa-brands fa-unity
+                  # url: https://react.dev/
+                  tooltip: Unity
+                # - icon: fab fa-x-twitter
+                #   url: https://example.com
+                  # tooltip: Example tooltip content
+              customIcons:
+                - icon: /images/logos/csharp-logo.png
+                  # url: "https://example.com"
+                  tooltip: C#
+            reel:
+              - image: /images/work-experience/nabos/jason_maxx_horizontal_capsule.png
+              - image: /images/work-experience/nabos/screen_front_run.png
+              - image: /images/work-experience/nabos/screen_coroner.png
+
+      - company: "Learn Safari"
+        companyUrl: "https://www.learnsafari.com"
+        frontImage: /images/work-experience/ls/ls-logo.png
+        jobs:
+          - name: "Full Stack Developer"
+            date: "Feb 2019 - Dec 2024"
+            content: "Developing mobile apps to help kids learn a new language. The apps consist of a series of lessons, divided by levels, with a story and educational minigames. The apps are: *Spanish Safari*, for kids to learn Spanish, and *Safari Inglés*, for kids to learn English. Developed with *Unity*."
+            featuredItems:
+              fontAwesomeIcons:
+                - icon: fa-brands fa-unity
+                  # url: https://react.dev/
+                  tooltip: Unity
+                - icon: fa-brands fa-android
+                  # url: https://react.dev/
+                  tooltip: Android
+                - icon: fa-brands fa-apple
+                  # url: https://react.dev/
+                  tooltip: iOS
+              customIcons:
+                - icon: /images/logos/csharp-logo.png
+                  # url: "https://example.com"
+                  tooltip: C#
+            reel:
+              - image: /images/work-experience/ls/ls1.png
+              - image: /images/work-experience/ls/ls2.png
+              - image: /images/work-experience/ls/ls3.png
+      
+      - company: "Simón Bolivar University"
+        companyUrl: "http://www.usb.ve"
+        frontImage: images/work-experience/usb/usb-logo-yellow.jpg
+        jobs: 
+        - name: "Instructor"
+          date: "Jan 2018 - Apr 2018"
+          content: |
+            Instructor of the course *Laboratory of Algorithms and Structures I*.
+            
+            Teaching new enrolled students of *Computer Engineering* the basic theory of programming and an introduction to their first programming language."
+          featuredItems:
+            fontAwesomeIcons:
+              - icon: fa-brands fa-python
+                tooltip: Python
+
+  # Education
+  education:
+    enable: true
+    # title: "Custom Name"
+    index: false
+    items:
+      - title: "Bachelor of Science (B.S.) in Computer Engineering"
+        school:
+          name: "Simón Bolivar University"
+          url: "http://www.usb.ve"
+        # date: "2013 - 2023"
+        GPA: "4.0 out of 5.0"
+        content: |-
+          Elective Courses: 
+            - Programming Languages
+            - Artificial Intelligence
+            - Algorithms Design
+            - Computer Graphics
+
+          Internship subject: Automation tools
+
+          Extracurricular Activities
+            - President of DELU (Video Games Development Club at Simón Bolívar University)
+
+      - title: "High School"
+        school:
+          name: "Nuestra Señora de Pompei School."
+        content: "Mention: Sciences"
+        GPA: "4.5 out of 5.0"
+
+  # Achievements
+  achievements:
+    enable: false
+    # title: "Custom Name"
+    items:
+      - title: Google kickstart runner
+        content: I solved all problems with optimal solution.
+        url: https://example.com
+        image: /images/achievement.jpg
+      - title: Facebook Hackathon Winner
+        content: Developed a product using Artificial Intelligence.
+        image: /images/achievement.jpg
+      - title: Hugo Profile
+        content: Developed a theme and getting 1K+ downloads per month.
+        url: "https://github.com/gurusabarish/hugo-profile"
+        image: /images/achievement.jpg
+      - title: Microsoft Imagine Runner
+        content: We are developed a product which can help others.
+      - title: Google Summer of Code
+        content: Contributed to a open source project.
+        url: https://example.com
+
+  # projects
+  projects:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - title: Project Avatar
+        content: |
+          This project started as a personal challenge to create deep systems and create a game with a bigger scope. 
+          The game is a *3D Top Down RPG* made in *Unity*.  
+          **Still work in progress.**  
+
+          **Features**: Combat System, Combo system for combat, Abilities system, 3D Controller, Stats system, IA working with Utility AI
+        image: images/projects/gifs/combo-combat.gif
+        # featured:
+        #   name: Demo
+        #   link: https://hugo-profile.netlify.app
+        badges:
+          - "Unity"
+          - "C#"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/KevinMena/project-avatar
+
+      - title: Recontru-Bot
+        content: Game made for the Caracas Game Jam 2020. An art deco adventure of a robot that wants to repair the world and follow his dreams.
+        image: images/projects/img/recontrubot.jpg
+        featured:
+          name: Try
+          link: https://globalgamejam.org/2020/games/reconstru-bot-5
+        badges:
+          - "Unity"
+          - "C#"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/KevinMena/cgj2020
+
+      - title: Prince of Graecia
+        content: Game made for the Caracas Game Jam 2021. The God Apollo has taken away Orion's powers, darkening the stars of his constellation. Now Orion has to defeat the servants of Apollo to return the light to his stars and regain his powers. (Not a bootleg)
+        image: images/projects/img/prince.png
+        featured:
+          name: Try
+          link: https://globalgamejam.org/2021/games/prince-graecia-1
+        badges:
+          - "Unity"
+          - "C#"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/Nabos-Inc/BossRush/
+      
+      - title: Hades
+        content: |
+          _Rust_ based _Game Engine_. This project is my way to try to elevate my knowledge about making games. I wanted to try and make a game engine
+          to understand better how everything works under the hood and also took the oportunity to learn a new programming language
+          in the process. The aim is to use _Vulkan_ at the end, but in the meantime the engine is using _OpenGL_.  
+          **Still work in progress.**  
+          
+          _Dependencies_: Winit, Glow, ImGui, Vulkan/OpenGL.
+        # image: /images/projects/converter.jpg
+        # featured:
+        #   name: Demo
+        #   link: https://django-converter.herokuapp.com
+        badges:
+          - "Engines"
+          - "Rust"
+          - "Vulkan"
+          - "OpenGL"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/KevinMena/hades
+      
+      - title: Eumaclang
+        content: General-purposed programming language developed in the courses _CI4721 - Programming Languages II_ and _CI4722 - Programming Languages III_ in the terms April-July 2021 and September-December 2021.
+        # image: /images/projects/converter.jpg
+        badges:
+          - "C++"
+          - "Flex"
+          - "Bison"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/ArriagaAmin/maclang
+      
+      - title: Tac To Mips
+        content: Translator from Three Address Code to MIPS Architecture (specifically to MARS).
+        # image: /images/projects/converter.jpg
+        badges:
+          - "C++"
+          - "MIPS"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/KevinMena/tac2mips
+      
+      - title: Backoffice
+        content: Web application for the management of hours and tasks worked by human talent within a company.
+        # image: /images/projects/converter.jpg
+        badges:
+          - "Django"
+          - "Python"
+          - "HTML"
+          - "CSS"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/manuelguillegil/backoffice
+
+  #Contact
+  contact:
+    enable: true
+    # title: "Custom Name"
+    content: Open to new opportunities. Feel free to reach out!
+    btnName: Mail me
+    btnLink: mailto:kevinm.developer@gmail.com
+    # formspree:
+    #   enable: true # `contact.email` value will be ignored
+    #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+    #   emailCaption: "Enter your email address"
+    #   messageCaption: "Enter your message here"
+    #   messageRows: 5
+
+  footer:
+    recentPosts:
+      path: "blogs"
+      count: 3
+      title: Recent Posts
+      enable: false
+      disableFeaturedImage: false
+    socialNetworks:
+      github: https://github.com/KevinMena
+      linkedin: https://www.linkedin.com/in/kevin-mena/
+
+  # List pages like blogs and posts
+  listPages:
+    disableFeaturedImage: false
+
+  # Single pages like blog and post
+  singlePages:
+    socialShare: true
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+    tags:
+      openInNewTab: true
+
+  # For translations
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    pageNotFound: "Page not found"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
+
+  #customScripts: -| # You can add custom scripts which will be added before </body> tag
+  #  <script type="text/javascript"><!-- any script here --></script>
