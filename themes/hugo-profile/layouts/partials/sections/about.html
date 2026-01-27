@@ -1,0 +1,44 @@
+{{ if .Site.Params.about.enable | default false }}
+<section id="about" class="py-0 py-sm-5">
+    <div class="container bg-transparent">
+        <h3 class="text-center bg-transparent">{{ .Site.Params.about.title }}</h3>
+        <div class="bg-transparent row justify-content-center px-3 py-5">
+            {{ if .Site.Params.about.image }}
+            <div class="col-sm-12 col-md-8 col-lg-4 mb-5 mb-sm-0 mb-md-5 mb-lg-0 d-none d-sm-none d-md-block">
+                <div class="image d-flex px-5">
+                    <img src="{{ .Site.Params.about.image }}" class="img-thumbnail mx-auto rounded-circle" alt="">
+                </div>
+            </div>
+            {{ end }}
+            <div class="col-sm-12 col-md-12 col-lg-8 content">
+                {{ .Site.Params.about.content | markdownify }}
+                
+                {{ if .Site.Params.about.skills.enable }}
+                    <p style="margin-top: 25px;">{{ .Site.Params.about.skills.title }}</p>
+                    <div class="skills-container">
+                        {{ $sections := .Site.Params.about.skills.sections }}
+                        {{ $count := len $sections }}
+
+                        {{ range $index, $element := $sections }}
+                            <h2 class="skills-title">{{ .title }}</h2>
+                            
+                            <ul class="skills-list">
+                                {{ range .items }}
+                                <li class="skill-item">
+                                    <img src="{{ .icon }}" alt="{{ .name }} icon" class="skill-icon">
+                                    <span>{{ .name | markdownify }}</span>
+                                </li>
+                                {{ end }}
+                            </ul>
+
+                            {{ if lt $index (sub $count 1) }}
+                                <hr class="skills-divider">
+                            {{ end }}
+                        {{ end }}
+                    </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
