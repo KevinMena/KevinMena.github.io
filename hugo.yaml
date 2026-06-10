@@ -142,11 +142,11 @@ params:
       enable: true
     roundImage: true # Make hero image circular | default false
     button:
-      enable: false
+      enable: true
       name: "Resume"
-      url: "#"
-      download: true
-      newPage: false
+      url: "/Kevin Mena CV - EN.pdf"
+      download: false
+      newPage: true
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-github
