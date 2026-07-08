@@ -219,8 +219,8 @@ params:
         companyUrl: "https://letstalkmedia.co.uk"
         jobs:
           - name: "Software Developer"
-            date: "Oct 2025 - Current"
-            content: "I am currently working as a software developer for Let's Talk Media on an unannounced project developed with Flutter for mobile devices."
+            date: "Oct 2025 - Apr 2026"
+            content: "Unannounced project developed with Flutter for iOS/Android."
             featuredItems:
               fontAwesomeIcons:
                 - icon: fa-brands fa-android
