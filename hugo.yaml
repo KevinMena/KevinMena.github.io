@@ -371,6 +371,23 @@ params:
         links:
           - icon: fab fa-github
             url: https://github.com/KevinMena/project-avatar
+      
+      - title: Tiny Graphics Odin
+        content: |
+          Custom mini graphics engine built from the ground up to master modern graphics pipelines, utilizing Odin for superior memory control and SDL3 for low-level hardware abstraction.
+          This project is my way to try to elevate my knowledge about making games. I wanted to try and make a game engine to understand better how everything works under the hood and also took the oportunity to learn a new programming language
+          in the process. 
+        image: images/projects/img/model.png
+        # featured:
+        #   name: Demo
+        #   link: https://django-converter.herokuapp.com
+        badges:
+          - "Odin"
+          - "SDL3"
+          - "Engines"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/KevinMena/tiny-graphics-odin
 
       - title: Recontru-Bot
         content: Game made for the Caracas Game Jam 2020. An art deco adventure of a robot that wants to repair the world and follow his dreams.
@@ -397,27 +414,6 @@ params:
         links:
           - icon: fab fa-github
             url: https://github.com/Nabos-Inc/BossRush/
-      
-      - title: Hades
-        content: |
-          _Rust_ based _Game Engine_. This project is my way to try to elevate my knowledge about making games. I wanted to try and make a game engine
-          to understand better how everything works under the hood and also took the oportunity to learn a new programming language
-          in the process. The aim is to use _Vulkan_ at the end, but in the meantime the engine is using _OpenGL_.  
-          **Still work in progress.**  
-          
-          _Dependencies_: Winit, Glow, ImGui, Vulkan/OpenGL.
-        # image: /images/projects/converter.jpg
-        # featured:
-        #   name: Demo
-        #   link: https://django-converter.herokuapp.com
-        badges:
-          - "Engines"
-          - "Rust"
-          - "Vulkan"
-          - "OpenGL"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/KevinMena/hades
       
       - title: Eumaclang
         content: General-purposed programming language developed in the courses _CI4721 - Programming Languages II_ and _CI4722 - Programming Languages III_ in the terms April-July 2021 and September-December 2021.
